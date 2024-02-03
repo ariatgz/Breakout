@@ -22,3 +22,21 @@ float entity::x() const noexcept {
 float entity::y() const noexcept {
 	return sprite.getPosition().y;
 }
+
+float entity::left() const noexcept {
+	auto box = get_bounding_box();
+	return x() - box.width / 2.0f;
+
+}
+float entity::right() const noexcept {
+	auto box = get_bounding_box();
+	return x() + box.width / 2.0f;
+}
+float entity::top() const noexcept {
+	auto box = get_bounding_box();
+	return y() - box.height / 2.0f;
+}
+float entity::bottom() const noexcept {
+	auto box = get_bounding_box();
+	return y() + box.height / 2.0f;
+}

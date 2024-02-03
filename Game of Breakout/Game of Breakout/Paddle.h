@@ -20,6 +20,9 @@ public:
 	 void move_right() noexcept {
 		 velocity.x = 4.0f;
 	 }
+	 void move_down() noexcept {
+
+	 }
 	
 
 

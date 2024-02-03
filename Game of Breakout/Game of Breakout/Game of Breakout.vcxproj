@@ -134,6 +134,7 @@
     <ClCompile Include="ball.cpp" />
     <ClCompile Include="brick.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Interactions.cpp" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="Paddle.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="brick.h" />
     <ClInclude Include="constants.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Interactions.h" />
     <ClInclude Include="Paddle.h" />
   </ItemGroup>

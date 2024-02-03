@@ -7,6 +7,8 @@ class entity {
 protected:
 	sf::Sprite sprite;
 
+	bool is_destroyed{ false };
+
 public:
 
 	virtual void update() = 0;
@@ -18,6 +20,11 @@ public:
 
 	float x() const noexcept;
 	float y() const noexcept;
+
+	float left() const noexcept;
+	float right() const noexcept;
+	float top() const noexcept;
+	float bottom() const noexcept;
 
 	virtual ~entity() {};
 
@@ -38,6 +45,7 @@ public:
 	virtual void move_up() noexcept = 0;
 	virtual void move_left() noexcept = 0;
 	virtual void move_right() noexcept = 0;
+	virtual void move_down() noexcept = 0;
 
 
 

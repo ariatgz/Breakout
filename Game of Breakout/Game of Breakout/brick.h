@@ -11,6 +11,9 @@ public:
 	 void update() override;
 	 void draw(sf::RenderWindow& windows) override;
 
+	 bool isIT_destroyed() const { return is_destroyed; }
+	 void set_destroyed(bool state) { is_destroyed = state; }
+
 };
 
 
