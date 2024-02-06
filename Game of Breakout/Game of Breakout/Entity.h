@@ -11,7 +11,7 @@ protected:
 
 public:
 
-	virtual void update() = 0;
+	virtual void update() {};
 	virtual void draw(sf::RenderWindow& windows) = 0;
 
 	sf::FloatRect get_bounding_box() const noexcept;

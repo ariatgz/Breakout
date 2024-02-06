@@ -34,7 +34,11 @@ void handle_collision(ball& b, const Paddle& p) {
 void handle_collision(ball& b, brick& br) {
 	if (is_interacting(b, br)) {
 
-		br.set_destroyed(true);
+		br.weaken();
+
+		if (br.is_too_weak()) {
+			br.set_destroyed(true);
+		}
 
 
 		float left_overlap = b.right() - br.left();

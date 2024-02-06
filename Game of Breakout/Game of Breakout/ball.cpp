@@ -17,7 +17,13 @@ ball::ball(float x, float y) : moving_entity() {
 
 }
 
-void ball::update() {
+void ball::setPosition(float x, float y) {
+
+	sprite.setPosition(x, y);
+}
+
+
+void ball::update(int& lives) {
 
 	sprite.move(velocity);
 
@@ -39,8 +45,19 @@ void ball::update() {
 
 	if (y() > constants::window_height) {
 
-		velocity.y = -velocity.y;
+		--lives;
+		set_destroyed(true);
 	}
+}
+
+bool ball::is_destroyed() const noexcept {
+	return destroyed;
+}
+
+void ball::set_destroyed(bool b) noexcept {
+
+	destroyed = b;
+
 }
 
 void ball::move_up() noexcept {

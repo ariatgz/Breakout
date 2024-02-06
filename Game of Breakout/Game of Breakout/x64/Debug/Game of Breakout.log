@@ -1,4 +1,3 @@
 ﻿  Game.cpp
-  main.cc
-  Generating Code...
+C:\Users\Aria\source\repos\Game of Breakout\Game of Breakout\Game.cpp(81,10): warning C4553: '==': result of expression not used; did you intend '='?
   Game of Breakout.vcxproj -> C:\Users\Aria\source\repos\Game of Breakout\x64\Debug\Game of Breakout.exe
